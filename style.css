@@ -1,0 +1,418 @@
+html {
+    scroll-behavior: smooth;
+  }
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   
+}
+body {
+    font-size: 1.3em;
+    color:black;
+    
+}
+.navbar {
+    background-color:seashell;
+}
+.navbar-nav {
+    float:right;
+    
+   
+}
+
+.navbar-nav li:hover {
+    background-color: rgb(252, 205, 205);;
+    
+}
+
+.pro {
+    margin-top: 100px;
+    border: 1px solid black;
+}
+.display-pic {
+    text-align: center;
+}
+.my {
+    background-color: ash;
+    margin: 0;
+    border-radius: 0;
+}
+.my1 {
+    background-color:white ;
+    margin: 0;
+    height:97vh;
+}
+.my2 {
+    margin-top: 150px;
+    padding: 30px;
+    font-size: 1em;
+    
+
+}
+.quote {
+    font-size: 20px;
+    font-style: italic;
+    border: black double 3px;
+    padding:25px;
+    width: 75%;
+    margin: 0 auto;
+    
+   
+}
+.text{
+    width:100%;
+    height: 100%;
+    
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.text strong{
+    font-size: 2.5rem;
+    width:100%;
+    text-align: center;
+    color:black;
+    line-height: 50px;
+}
+.text strong span{
+    color:#fff;
+    background-color:#ff4321 ;
+    padding:8px;
+}
+.slideanim {
+    visibility: hidden;
+}
+.dotted {
+    height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px black inset;
+    
+}
+.my3 {
+    background-image: linear-gradient(to right,white, seashell);
+    height: auto;
+}
+.my4 {
+    background-image: linear-gradient(to right,white, seashell);
+font-size: 17px;
+    
+}
+.clear {
+    clear: both;
+}
+.box {
+    border: black 2px solid;
+    width:70%;
+    margin: 0 auto;
+    box-shadow:0 10px 5px 0 black;
+    padding: 40px;
+    border-radius: 20px;
+}
+.box-3 {
+    border : 2px solid black;
+    width: 80%;
+    margin : 0 auto;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 5px 8px 1px black;
+}
+.btn {
+    border:none;
+    border-radius: 10px;
+    background-color: teal;
+    color:white;
+    cursor: pointer;
+    padding:15px;
+    margin: 10px;
+    width: 75%;
+}
+.about{
+    border : solid black 3px;
+    box-shadow:0 18px 15px 0 black;
+    width:80%;
+    margin: 0 auto;
+}
+.about a {
+    text-decoration: underline;
+    color:black;
+}
+
+.hello2 {
+    
+    box-shadow: 5px 10px 0 0 black;
+}
+.about:hover {
+    box-shadow: 5px 20px 10px 0 black;
+}
+.hello2:hover {
+    box-shadow: 25px 15px 0 0 black;
+}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.658);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: seashell;
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.199);
+}
+
+.blinking {
+   
+    display: inline-block;
+}
+.name {
+   
+    font-family: josefinSans-bold; 
+    color:black;
+    border-right:4px solid black ;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 6s steps(50) forwards,
+            blink-caret .8s step-end infinite;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes blink-caret {
+    from, to {border-color: transparent;}
+    50% {border-color:black;}
+
+}
+@keyframes typing {
+    0% {width: 0%;}
+    30% {width: 100%;}
+    80% {width: 100%;}
+    90% {width: 0%;}
+    100% {width: 0%;}
+}
+
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+
+.footericon img {
+    height: 90px;
+    padding: 20px;
+    padding-left: 0;
+} 
+.footerico img {
+    height: 40px;
+    padding: 5px;
+    padding-left: 0;
+    margin-top: 0;
+} 
+.skills {
+    padding: 0;
+    margin-top: -20px; 
+    background-color:#161E2C ;
+    color:white;
+    height: 5000px;
+    font-family: josefinSans;
+}
+.titles {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+.me {
+    padding:1% 7%;
+    text-align: center;
+
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 0 auto;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #f15539;
+    color: white;
+    transform: rotateY(180deg);
+  }
+.me form{
+    padding:30px;
+}
+.me input, textarea {
+    width:95%;
+    padding:11px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    resize:none;
+}
+.me button {
+    border:none;
+    border-radius: 10px;
+    background-color: teal;
+    color:white;
+    cursor: pointer;
+    padding:15px;
+    margin: 10px;
+    width: 90%px;
+
+}
+.hi {
+    text-decoration: none;
+    color:white;
+}
+.hi:hover {
+    text-decoration: underline;
+    color:white;
+}
+.me button:hover {
+
+    background-color: turquoise;
+}
+footer {
+    
+    color: white;
+    padding: 18px;
+    margin: 0 auto;
+    text-align: center;
+}
+@media screen and (max-width:1200px) {
+    .my1 {
+        height: 100%;
+    }
+    .my2 {
+        margin-top: 30px;
+    }
+    .about {
+        width: 95%;
+    }
+    .about-title p {
+        font-size: 20px;
+    }
+    .my3 {
+        height: auto ;
+    }
+    .hello {
+        margin-top: 0vh;
+    }
+    .hello2 {
+        margin-top: 2vh;
+        width: 80%;
+       
+    }
+    .box-mb {
+       margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:785px) {
+   
+  body {
+       font-size: 15px;
+   }
+    .navbar-nav {
+        float: left;
+        width: 100%;
+    }
+    .my1 {
+        height: 100%;
+    }
+    .my2 {
+        margin-top: 30px;
+    }
+    .my3 {
+        height: auto ;
+    }
+    .about {
+        width: 95%;
+        
+    }
+    .about-title p {
+        font-size: 17px;
+    }
+    .hello {
+        margin-top: 0vh;
+    }
+    .hello2 {
+        margin-top: 2vh;
+        width:90%;
+        border-radius: 50%;
+    }
+    .hid {
+        visibility: hidden;
+    }
+    .name {
+        text-align: left;
+    }
+    .box-mb {
+    margin-top: 20px;
+    }
+}
